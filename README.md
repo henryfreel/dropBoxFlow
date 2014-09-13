@@ -13,3 +13,4 @@ Completed Requirements (3/3 Required, 2/3 Optional)
   Optional:  Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
   Optional: You should be able to swipe through the welcome screens instead of just tapping them.
 
+![alt tag](dropboxgif.gif)
