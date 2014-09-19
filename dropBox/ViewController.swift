@@ -8,10 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIScrollViewDelegate {
+    @IBOutlet weak var welcomeScrollView: UIScrollView!
+    @IBOutlet var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        welcomeScrollView.contentSize = CGSizeMake(welcomeScrollView.frame.width*3, welcomeScrollView.frame.size.height)
+        welcomeScrollView.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,10 +26,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func swipeDetected(sender: UISwipeGestureRecognizer) {
-        performSegueWithIdentifier("welcome1Segue", sender: self)
-        
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        var page = Int(welcomeScrollView.contentOffset.x / 320)
+        pageControl.currentPage = page
     }
+    
+    //@IBAction func swipeDetected(sender: UISwipeGestureRecognizer) {
+    //    performSegueWithIdentifier("welcome1Segue", sender: self)
+        
+    //}
 
   }
 
