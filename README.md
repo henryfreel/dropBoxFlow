@@ -15,7 +15,7 @@ Completed Requirements (3/3 Required, 2/3 Optional)
 * [x] completed: User can follow the sign in flow.
   
 * [x] Optional:  Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
-* 
+
 * [x] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
   
-![lt tag](dropboxgif
+![alt tag](dropboxgif)
