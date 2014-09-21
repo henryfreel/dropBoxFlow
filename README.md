@@ -18,4 +18,4 @@ Completed Requirements (3/3 Required, 2/3 Optional)
 
 * [x] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
   
-![alt tag](dropboxgif)
+![alt tag](dropboxgif.gif)
